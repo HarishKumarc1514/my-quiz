@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".QuizQuestionsActivity">
+
+    <TextView
+        android:id="@+id/q_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/cagliostro"
+        android:padding="10dp"
+        android:text="Guess :"
+        android:textColor="#EA0855"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/q_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/quesop"
+        android:fontFamily="@font/cagliostro"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=" Option1 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Q1"
+        app:layout_constraintTop_toBottomOf="@+id/Q1" />
+
+    <TextView
+        android:id="@+id/opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/quesop"
+        android:fontFamily="@font/cagliostro"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=" Option2 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Q1"
+        app:layout_constraintTop_toBottomOf="@+id/Q1" />
+
+    <TextView
+        android:id="@+id/opt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/quesop"
+        android:fontFamily="@font/cagliostro"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=" Option3 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Q1"
+        app:layout_constraintTop_toBottomOf="@+id/Q1" />
+
+    <TextView
+        android:id="@+id/opt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/quesop"
+        android:fontFamily="@font/cagliostro"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=" Option4 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/Q1"
+        app:layout_constraintTop_toBottomOf="@+id/Q1" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cagliostro"
+        android:text="Next"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        app:backgroundTint="#E91E63"
+        app:cornerRadius="15dp" />
+
+
+</LinearLayout>

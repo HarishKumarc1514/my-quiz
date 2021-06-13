@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/preview"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="234dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_quiz" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detcard"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="205dp"
+        app:cardCornerRadius="25dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainimg">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/weltext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Welcome"
+                android:textColor="#E91E63"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="150dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg" />
+
+            <EditText
+                android:id="@+id/namebox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/textbox"
+                android:drawableLeft="@drawable/profile_user"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/cagliostro"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="#F5050505"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/n_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginRight="90dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cagliostro"
+                android:padding="15dp"
+                android:text="Submit"
+                android:textColor="#FAF9F4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:backgroundTint="#E91E63"
+                app:cornerRadius="12sp"
+                app:iconPadding="25dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
